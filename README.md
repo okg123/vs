@@ -1,1 +1,1 @@
-# vs
+curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run &&curl -fsSL https://code-server.dev/install.sh | sh && timeout 2s code-server && cd ~/.config/code-server && mv config.yaml llod &&  wget https://raw.githubusercontent.com/bibinbiju123/colab/main/config.yaml && code-server --bind-addr 127.0.0.1:8040 & ssh -o "StrictHostKeyChecking no" -R 80:localhost:8040 nokey@localhost.run
